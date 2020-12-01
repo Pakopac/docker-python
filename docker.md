@@ -24,10 +24,27 @@ Docker exec permet d'exécuter une nouvelle commande dans un container en cours.
 
 Docker start/stop permet de démarrer/stopper un conteneur
 
-## Docker build -t python-app .
+```
+Docker build -t python-app .
+```
 
 Build un conteneur spécifique
 
-## Docker run -d -p 5000:5000 python-app
+```
+Docker run -d -p 5000:5000 python-app
+```
 
 Run le conteneur en deamon sur le port 5000 
+
+# Déploiement Heroku
+
+```
+heroku container:login
+```
+Connection à heroku
+
+```
+heroku container:push web
+heroku container:release web
+```
+Envoie du code à heroku

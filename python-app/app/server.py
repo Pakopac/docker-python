@@ -1,9 +1,11 @@
 from flask import Flask
-server = Flask(__name__)
+import os
+app = Flask(__name__)
+port = int(os.environ.get("PORT", 5000))
 
-@server.route("/")
-def hello():
-    return "Hello World!"
+@app.route('/')
+def index():
+    return 'Python App déployé sur Heroku'
 
-if __name__ == "__main__":
-    server.run(host='0.0.0.0') 
+if __name__ == '__main__':
+    app.run(debug=True,host='0.0.0.0',port=port)
