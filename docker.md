@@ -25,13 +25,13 @@ Docker exec permet d'exécuter une nouvelle commande dans un container en cours.
 Docker start/stop permet de démarrer/stopper un conteneur
 
 ```
-Docker build -t python-app .
+docker build -t python-app .
 ```
 
 Build un conteneur spécifique
 
 ```
-Docker run -d -p 5000:5000 python-app
+docker run -d -p 5000:5000 python-app
 ```
 
 Run le conteneur en deamon sur le port 5000 
