@@ -8,14 +8,26 @@ Un conteneur docker est un environnement d'execution virtualizé dans lequel on 
 
 # Commandes
 
-## build
+## Build
 
-docker build permet de créer des images docker à partir d'un Dockerfile et d'un contexte (qui représente l'ensemble des fichiers situés dans le path ou l'url).
+Docker build permet de créer des images docker à partir d'un Dockerfile et d'un contexte (qui représente l'ensemble des fichiers situés dans le path ou l'url).
 
-## run
+## Run
 
-docker run permet de créer un container sur l'image spécifiée puis de démarrer l'application.
+Docker run permet de créer un container sur l'image spécifiée puis de démarrer l'application.
 
-## exec
+## Exec
 
-docker exec permet d'exécuter une nouvelle commande dans un container en cours.
+Docker exec permet d'exécuter une nouvelle commande dans un container en cours.
+
+## Start/stop
+
+Docker start/stop permet de démarrer/stopper un conteneur
+
+## Docker build -t python-app .
+
+Build un conteneur spécifique
+
+## Docker run -d -p 5000:5000 python-app
+
+Run le conteneur en deamon sur le port 5000 
